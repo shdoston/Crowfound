@@ -1,0 +1,331 @@
+@import "./fonts.css";
+@import "./varable.css";
+@import "./normalize.css";
+@import "./base.css";
+
+.header {
+  background-image: url(../images/image-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 32rem;
+}
+.header-container {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sitenav-list {
+  display: flex;
+  gap: 3.2rem;
+}
+.sitenav-item {
+}
+.sitenav-link {
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.header__btn {
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.hero {
+  margin-top: -9.2rem;
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  margin-bottom: 2.4rem;
+  background-color: var(--white-color);
+  border: 1px solid #0000000d;
+  border-radius: 8px;
+}
+.hero__logo-image {
+  margin-top: -7.5rem;
+}
+.hero__title {
+  margin-top: 1rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--black--color);
+  margin-bottom: 1.5rem;
+}
+.hero__info {
+  line-height: 1.24;
+  margin-bottom: 4rem;
+}
+.bookmark-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25.6rem;
+}
+.hero__btn {
+}
+.btn {
+  color: var(--white-color);
+  padding: 1.9rem 4rem;
+  line-height: 1.24;
+  background-color: var(--primary-color);
+  font-weight: 700;
+  border-radius: 3.3rem;
+}
+.hero__bookmark {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  width: 174px;
+  height: 56px;
+  border-radius: 3.3rem;
+  background-color: rgba(47, 47, 47, 5%);
+}
+.hero__bookmark-img {
+}
+.hero__bookmark-text {
+  font-weight: 700;
+  line-height: 1.24;
+}
+
+
+.stats__info {
+  display: flex;
+  align-items: flex-start;
+}
+.stats__wrapper:nth-child(1) {
+  margin-right: 4.2rem;
+}
+.stats__wrapper:nth-child(2) {
+  margin-right: 9.1rem;
+  padding-left: 4.7rem;
+  border-left: 1px solid rgba(0, 0, 0, 15%);
+}
+.stats__wrapper:nth-child(3) {
+  padding-left: 4.7rem;
+  border-left: 1px solid rgba(0, 0, 0, 15%);
+}
+.stats__wrapper {
+}
+.stats__num {
+  margin-bottom: 0.8rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.23;
+  color: var(--black--color);
+}
+.stats__text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.223;
+}
+.stats__graph {
+  margin-top: 3.7em;
+  border-radius: 3.2rem;
+  width: 100%;
+  height: 12px;
+  background-color: rgba(47, 47, 47, 5%);
+}
+.stats__graph-color {
+  border-radius: 3.2rem;
+  width: 75%;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+
+.about__container {
+}
+.about__title {
+  color: var(--black--color);
+  font-size: 2rtem;
+  font-weight: 700;
+  line-height: 1.23;
+  margin-bottom: 3.5rem;
+}
+.about__text {
+  line-height: 1.875;
+  margin-bottom: 4rem;
+}
+
+.stands {
+}
+.stand {
+  margin-bottom: 2.4rem;
+  padding: 3.2rem;
+  border: 1px solid #00000026;
+  border-radius: 0.8rem;
+}
+.disabled-stand {
+  opacity: 50%;
+}
+.disabled-btn {
+  background-color: var(--disabled-color);
+}
+.stand__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+.stand__heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.23;
+  color: var(--black--color);
+}
+.stand__price {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.223;
+  color: var(--primary-color);
+}
+.stand__text {
+  margin-bottom: 2.4rem;
+}
+.stand__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stand__quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+@media (max-width: 475px) {
+  .container {
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
+  .header {
+    background-image: url(../images/image-hero-mobile.jpg);
+    height: 300px;
+  }
+  .header-container {
+    padding-top: 3.2rem;
+  }
+  .sitenav-list {
+    display: none;
+  }
+  .header__btn {
+    display: block;
+  }
+ 
+  .hero {
+    margin-top: -7rem;
+  }
+  .main-container {
+    max-width: 327px;
+    padding: 2.4rem;
+  }
+  .hero__container {
+  }
+  .hero__logo-image {
+    margin-top: -5.2rem;
+  }
+  .hero__title {
+    font-size: 2.04rem;
+    font-weight: 700;
+    line-height: 1.223;
+    text-align: center;
+  }
+  .hero__text {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+
+  .bookmark-btn {
+    gap: 0.9rem;
+  }
+  
+  .hero__bookmark {
+    display: block;
+    width: 56px;
+    height: 56px;
+  }
+
+  .hero__bookmark-text {
+    display: none;
+  }
+
+  .stats__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stats__wrapper {
+    padding: 0;
+    border-left: none;
+    margin: 0;
+  }
+  .stats__wrapper:nth-child(1) {
+    margin-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 15%);
+  }
+  .stats__wrapper:nth-child(2) {
+    border-bottom: 1px solid rgba(0, 0, 0, 15%);
+    margin-top: 2.4rem;
+    margin-right: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  .stats__wrapper:nth-child(3) {
+    margin-top: 2.4rem;
+    margin-right: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .stats__info {
+    margin-bottom: 2.4rem;
+    font-size: 1.4rem;
+  }
+  .stats__graph {
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+
+  .about__title {
+    font-size: 1.8rem;
+    margin-bottom: 2.4rem;
+  }
+  .about__text {
+    font-size: 1.4rem;
+  }
+
+  .stand__title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+  
+  .stand__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .stand__quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .stand-text {
+    margin-bottom: 0;
+  }
+
+}
